@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background:linear-gradient(to right, rgb(232, 225, 225),rgb(229, 223, 223))
+}
+main{
+    width: 90%;
+    margin: 1rem auto;
+    background-color: whitesmoke;
+    padding: 1rem;
+    text-transform: capitalize;   
+    font-family: sans-serif;
+}
+span{
+    font-weight: 700;
+}
+h1{
+    text-transform: uppercase;
+}
+p{
+    line-height: 1.7rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    background-color: #fff;
+    padding: 1.3rem;
+    border-radius: .7rem;
+}
+label{
+    font-size: 1.2rem;
+}
+input{
+    padding: .6rem;
+    border-radius: .3rem;
+    border-top: solid black 2px;
+    border-bottom: solid #000 1px;
+    margin: .7rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+input:hover, input:focus{
+    border: solid rgb(207, 18, 18) 2px;
+}
+button{
+    padding: .6rem 1rem;
+    border: none;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    align-self: center;
+    border-radius: .3rem;
+    background-color: rgb(85, 85, 85);
+    color: #fff;
+    font-size: 1rem;
+}
+button:hover, button:focus{
+    background-color: rgb(44, 43, 43);
+
+}
+h2{
+    font-weight: normal;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkblue;
+    background-color: rgb(227, 227, 227);
+    padding: 1rem;
+    box-shadow: 1px 2px 2px 1px  black;
+    display: none;
+}
+@media(min-width:415px){
+    main{
+        width: 70%;
+    }
+}

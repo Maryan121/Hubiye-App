@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubiye App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>hubiye</h1>
+        <p><span>fiira gaar ah</span> sanduuqa koowad waxaa galinee tirada waxa la qeebinaayo , sanduuqa labaadna waxaa galinee tirada dadka looqeebinaayo kadib batanka hoose taabo</p>
+        <form>
+            <label for="gudaha">Tirada Gudaha</label>
+            <input type="text"  id="first-input" >
+            <label for="tirada dadka">Tirada Dadka</label>
+            <input type="text"  id="second-input">
+            <button id="btn">inta Taabo</button>
+        </form>
+        <h2 id="result"></h1>
+    </main>
+
+
+
+    <script >
+        let btn = document.getElementById('btn');
+        let firstInput = document.getElementById('first-input');
+        let secondInput = document.getElementById('second-input');
+        let resultPrinter = document.getElementById('result');
+
+
+        
+
+        btn.addEventListener('click', (e)=>{
+            e.preventDefault();
+            const a = Number(firstInput.value) / Number(secondInput.value);
+            const b = Number(firstInput.value) % Number(secondInput.value);
+            resultPrinter.style.display = 'block'
+            resultPrinter.innerHTML = `
+            kor waa: ${Math.trunc(a) } <br> Haraagane waa: ${Math.trunc(b) }
+            `;
+
+        })
+        
+    </script>
+</body>
+</html>
